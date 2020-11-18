@@ -144,53 +144,82 @@ include_once './includes/head.meta.php';
             <div class="nl-row">
                 <div class="nl-col-1 nl-mg-b-16">
                     <div class="nl-ip-part nl-max one-btn">
-                        <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                        <div class="nl-info-part">
+                            <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                            <div class="nl-text-info">Stop Working</div>
+                        </div>
                         <button class="nl-btn-setup">발전을</button>
                     </div>
                 </div>
                 <div class="nl-col-2 nl-mg-b-16">
                     <div class="nl-ip-part nl-max one-btn">
-                        <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                        <div class="nl-info-part">
+                            <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                            <div class="nl-text-info">Holly day</div>
+                        </div>
                         <button class="nl-btn-setup">발전을</button>
                     </div>
                 </div>
                 <div class="nl-col-1 nl-mg-b-16">
                     <div class="nl-ip-part nl-max one-btn">
-                        <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                        <div class="nl-info-part">
+                            <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                            <div class="nl-text-info">발전을 발전을</div>
+                        </div>
                         <button class="nl-btn-setup">발전을</button>
                     </div>
                 </div>
                 <div class="nl-col-2 nl-mg-b-16">
-                    <div class="nl-ip-part nl-max one-btn">
-                        <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                    <div class="nl-ip-part nl-max two-btn">
+                        <div class="nl-info-part">
+                            <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                            <div class="nl-text-info">Post setup</div>
+                        </div>
+                        <button class="nl-btn-setup">발전을</button>
                         <button class="nl-btn-setup">발전을</button>
                     </div>
                 </div>
                 <div class="nl-col-1 nl-mg-b-16">
                     <div class="nl-ip-part nl-max one-btn">
-                        <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                        <div class="nl-info-part">
+                            <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                            <div class="nl-text-info">Alerm</div>
+                        </div>
                         <button class="nl-btn-setup">발전을</button>
                     </div>
                 </div>
                 <div class="nl-col-2 nl-mg-b-16">
-                    <div class="nl-ip-part nl-max two-btn">
-                        <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
-                        <button class="nl-btn-setup">발전을</button>
-                        <button class="nl-btn-setup">발전을</button>
-                    </div>
-                </div>
-                <div class="nl-max nl-mg-b-16">
-                    <div class="nl-ip-part nl-max two-btn">
-                        <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
-                        <button class="nl-btn-setup">발전을</button>
-                        <button class="nl-btn-setup">발전을</button>
-                    </div>
-                </div>
-                <div class="nl-max">
                     <div class="nl-ip-part nl-max one-btn">
-                        <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                        <div class="nl-info-part">
+                            <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                            <div class="nl-text-info">
+                                Help
+                                <span class="nl-text-grey">발전을발전을발전을</span>
+                            </div>
+                        </div>
                         <button class="nl-btn-setup">발전을</button>
                     </div>
+                </div>
+                <div class="nl-col-1 nl-mg-b-16">
+                    <div class="nl-ip-part nl-max one-btn">
+                        <div class="nl-info-part">
+                            <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                            <div class="nl-text-info">
+                                Version 
+                                <span class="nl-text-grey">발전을발전을발전을</span>
+                            </div>
+                        </div>
+                        <button class="nl-btn-setup">발전을</button>
+                    </div>
+                </div>
+                <div class="nl-col-2 nl-mg-b-16">
+                    <!-- <div class="nl-ip-part nl-max one-btn">
+                        <div class="nl-info-part">
+                            <input type="text" class="nl-ip nl-max" placeholder="발전을발전을">
+                            <div class="nl-info-part">발전을 발전을</div>
+                        </div>
+                        <button class="nl-btn-setup">발전을</button>
+                    </div> -->
                 </div>
             </div>
         </div>

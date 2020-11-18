@@ -189,16 +189,23 @@ button {
 .nl-ip-part {
     position: relative;
     display: flex;
-    border: 1px solid #c4c4c4;
+    align-items: center;
     background-color: #fff;
+    border-radius: 5px;
+    height: 64px;
 }
 
-.nl-ip-part.one-btn .nl-ip {
-    width: calc(100% - 105px);
+.nl-ip-part.one-btn .nl-info-part {
+    width: calc(100% - 112px);
+    padding-left: 24px;
+    font-size: 18px;
 }
 
-.nl-ip-part.two-btn .nl-ip {
-    width: calc(100% - 210px);
+.nl-ip-part.two-btn .nl-info-part {
+    width: calc(100% - 224px);
+    padding: 24px;
+    font-size: 18px;
+
 }
 
 .nl-ctn-2 {
@@ -206,31 +213,33 @@ button {
 }
 
 .nl-ctn-2 .nl-row {
-    padding: 0 20px;
+    /* padding: 0 20px; */
     flex-wrap: wrap;
 }
 
 .nl-ctn-2 .nl-row .nl-ip {
     border: 0;
+    padding-left: 24px;
+    display: none;
 }
 
 .nl-ctn-2 .nl-row .nl-col-1 {
     width: 50%;
-    padding-right: 8px;
+    padding-right: 12px;
 }
 
 .nl-ctn-2 .nl-row .nl-col-2 {
     width: 50%;
-    padding-left: 8px;
+    padding-left: 12px;
 }
 
 .nl-btn-setup {
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-right: 12px;
+    font-size: 18px;
     width: 100px;
     height: 40px;
-    border: 1px solid #888;
-    border-radius: 3px;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
 }
 
 .nl-mg-b-16 {
@@ -433,4 +442,8 @@ button {
     height: 22px;
     width: 0;
     border-right: 1px solid #e2e2e2;
+}
+.nl-text-info .nl-text-grey {
+    color: #b8b8b8;
+    padding-left: 16px;
 }
