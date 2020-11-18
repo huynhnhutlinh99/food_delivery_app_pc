@@ -95,6 +95,7 @@ button {
 .nl-item-order-list .nl-text-price {
     font-weight: bold;
     font-size: 20px;
+    margin-right: 10px;
 }
 
 .nl-item-order-list .nl-pay-status {
