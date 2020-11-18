@@ -1,7 +1,23 @@
-<?php include_once './includes/head.meta.php'?>
+
 <?php
 session_start();
-echo 'id: '.$_SESSION['r_id']; ?>
+ini_set('display_errors', 0);
+error_reporting(0);
+include_once './includes/head.meta.php';
+include_once('../lib/commom.php');
+$r_no = sql_fetch("SELECT r_no,r_restaurant_name from restaurant where r_id =".$_SESSION['r_id']);
+$order = sql_query("
+SELECT o.order_id, o.regtime,o.cancel_after_shop_accept,o.cancel_before_shop_accept,o.cancel_after_shop_delivery ,o.total_price_order, m.mb_name, c.count_quantity, c.option_name, c.option_add_name, c.unit_price,o.cancel_yn,o.status
+        FROM orders AS o 
+        LEFT JOIN (SELECT COUNT(order_id) AS count_quantity, order_id, r_no, option_name, option_add_name, unit_price
+          FROM cart WHERE ordered = 'y' GROUP BY order_id) as c 
+        ON c.order_id = o.order_id 
+        LEFT JOIN member AS m 
+        ON m.mb_no = o.mb_no 
+        WHERE r_no = '{$r_no['r_no']}' and o.show_yn = 'y'
+");
+?>
+
 <div class="nl-container">
     <div class="nl-menu">
         <ul id="menu" class="nl-list">
@@ -18,28 +34,51 @@ echo 'id: '.$_SESSION['r_id']; ?>
     </div>
     <!-- content 1 -->
     <div id="ctn-1" class="nl-ctn-1 nl-ctn-part tab1 active">
+        <?php foreach($order as $show){ ?>
         <div class="nl-item-order-list">
             <div class="nl-row">
                 <div class="nl-col-1">
                     <div class="nl-row nl-flex-col">
-                        <span class="nl-text-time">07:00</span>
+                        <span class="nl-text-time"><?=date('H:i',strtotime($show['regtime']))?></span>
                         <span class="nl-text-type green">유형</span>
                     </div>
                 </div>
                 <div class="nl-col-2">
                     <div>
-                        <span class="nl-text-price">20,000을</span>
+                        <span class="nl-text-price"><?=number_format($show['total_price_order'])?>을</span>
+                        <?php if($show['cancel_yn'] == 'y' && 
+                        ($show['cancel_before_shop_accept']=='y' || $show['cancel_after_shop_accept']=='y' || $show['cancel_after_shop_delivery']=='y') ){ ?>
+                        <span class="nl-pay-status type-3 " style="color:red;border:1px solid red">전을</span>
+                        <?php } else if($show['status'] == 'complete'){ ?>
                         <span class="nl-pay-status type-1 ">전을</span>
+                        <?php } else if($show['status'] == 'delivery'){?>
                         <span class="nl-pay-status type-2 ">전을</span>
+                        <?php } ?>
+                
                     </div>
                     <div>
-                        <span class="nl-text-1">국민경제의 SET 1을</span>
+                        
+                        <?php
+                            $item = '';
+                            $sql_cart = "select c.*, c.rf_name from cart c left join restaurant_food rf on c.rf_no = rf.rf_no where c.order_id =".$show['order_id'];
+                            $result = sql_query($sql_cart);
+                            while($row = sql_fetch_array($result)){
+                        ?>
+                           <?php if($row['rf_name']) 
+                                 $item .= $row['rf_name'] . ' x ' . $row['quantity'] . ", ";
+                                else 
+                                $item .= '';
+                                 ?>
+                        <?php
+                        }  
+                        ?>
+                       <span class="nl-text-1">  <?= rtrim($item,', ') ?>   </span>
                     </div>
                     <div>
-                        <span class="nl-text-2">국민경: 112</span>
+                        <span class="nl-text-2">국민경: <?=$show['order_id']?></span>
                     </div>
                     <div class="nl-row">
-                        <span class="nl-text-3">응하 위하여</span>
+                        <span class="nl-text-3"><?=$r_no['r_restaurant_name']?></span>
                         <span class="nl-text-4">응하기 위하여</span>
                     </div>
                 </div>
@@ -50,7 +89,8 @@ echo 'id: '.$_SESSION['r_id']; ?>
                 </div>
             </div>
         </div>
-        <div class="nl-item-order-list">
+        <?php } ?>
+        <!-- <div class="nl-item-order-list">
             <div class="nl-row">
                 <div class="nl-col-1">
                     <div class="nl-row nl-flex-col">
@@ -113,7 +153,7 @@ echo 'id: '.$_SESSION['r_id']; ?>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- content 2 -->
     <div id="ctn-2" class="nl-ctn-2 nl-ctn-part tab2">
