@@ -85,7 +85,7 @@ button {
 }
 
 .nl-item-order-list .nl-text-price {
-    font-size: 24px;
+    font-size: 26px;
     margin-right: 10px;
 }
 .nl-text-total-order {
@@ -113,9 +113,11 @@ button {
 .nl-item-order-list .nl-text-1 {
     padding: 10px 0;
     color: #8a8a8a;
+    font-size: 18px;
 }
 .nl-item-order-list .nl-text-2 {
     color: #666;
+    font-size: 18px;
 }
 .nl-btn-send-mes {
     background-color: #fff;
@@ -417,7 +419,7 @@ button {
 }
 .nl-order-num {
     position: relative;
-    font-size: 20px;
+    font-size: 21px;
     margin-left: 20px;
     padding-left: 20px;
 }
