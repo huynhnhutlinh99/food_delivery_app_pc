@@ -47,61 +47,55 @@ button {
 }
 
 .nl-container {
-    max-width: 760px;
+    max-width: 1280px;
     margin: 0 auto;
-    background-color: #f2f3f4;
+    background-color: #f5f5f5;
     min-height: 100vh;
 }
 
 .nl-item-order-list {
-    margin-bottom: 16px;
-    padding: 0 15px;
-    font-weight: 600;
+    margin-bottom: 24px;
 }
 .nl-item-order-list>.nl-row {
-    padding: 15px;
-    background-color: #f9f9f9;
+    padding: 0 35px;
+    background-color: #fff;
     border-radius: 3px;
-    border: 1px solid #c4c4c4;
 }
-.nl-item-order-list .nl-row>div {
-    padding: 0 20px;
-}
+
 .nl-item-order-list .nl-row .nl-col-1 {
-    width: 148px;
+    width: calc(100% - 220px);
 }
 .nl-item-order-list .nl-row .nl-col-2 {
-    width: calc(100% - 288px);
+    width: 220px;
 }
-.nl-item-order-list .nl-row .nl-col-3 {
-    width: 140px;
-}
+
 .nl-item-order-list .nl-text-time {
-    display: block;
     font-size: 42px;
-    font-weight: bold;
 }
 
 .nl-item-order-list .nl-text-type {
-    display: block;
     height: 30px;
+    width: 85px;
     line-height: 30px;
     text-align: center;
     color: #fff;
-    border-radius: 20px;
     font-size: 18px;
     font-weight: 400;
+    background-color: #3ba0e2;
 }
 
 .nl-item-order-list .nl-text-price {
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     margin-right: 10px;
 }
-
+.nl-text-total-order {
+    color: #6a6a6a;
+    display: inline-block;
+    margin-right: 10px;
+}
 .nl-item-order-list .nl-pay-status {
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid #d2d2d2;
+    color: #6a6a6a;
     border-radius: 15px;
     display: inline-block;
     min-width: 70px;
@@ -109,21 +103,9 @@ button {
     text-align: center;
     font-size: 15px;
     font-weight: 400;
+    margin-left: 10px;
 }
 
-.nl-item-order-list .nl-pay-status.type-1 {
-    border-color: #1391a1;
-    color: #1391a1;
-}
-
-.nl-item-order-list .nl-pay-status.type-2 {
-    border-color: orange;
-    color: orange;
-}
-.nl-item-order-list .nl-row .nl-col-1>.nl-row {
-     justify-content: center;
-     height: 100%;
-}
 .nl-item-order-list .nl-row .nl-col-2 div span {
     display: inline-block;
 }
@@ -132,47 +114,48 @@ button {
     padding: 10px 0;
     color: #8a8a8a;
 }
-
-/* .nl-item-order-list .nl-text-2 {
-    margin-top: 5px;
-} */
-
-.nl-item-order-list .nl-text-3 {
-    color: #5d5d5d;
-    ;
-    margin-top: 5px;
-    font-weight: 600;
+.nl-item-order-list .nl-text-2 {
+    color: #666;
 }
-
-.nl-item-order-list .nl-text-4 {
-    color: #007bff;
-    margin-top: 5px;
-    padding-left: 30px;
-}
-
-.nl-btn-print {
-    background-color: #f0f0f0;
-    border: 1px solid #888;
-    height: 100px;
-    width: 100px;
+.nl-btn-send-mes {
+    background-color: #fff;
+    border: 1px solid #a5a5a5;
+    height: 38px;
+    width: 142px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
     font-size: 18px;
-    border-radius: 3px;
 }
-
+.nl-btn-print {
+    background-color: #f8f8f8;
+    border: 1px solid #c2c2c2;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+.nl-h-100 {
+    height: calc(100vh - 42px);
+}
 .nl-menu {
-    background-color: #24262d;
+    background-color: #00263e;
+    height: 100%;
+    width: 217px;
 }
 
 .nl-menu .nl-list .nl-item .nl-text {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 55px;
+    height: 74px;
     color: #fff;
-    padding: 20px 10px;
+    padding: 0 26px;
+    font-size: 22px;
 }
 
 .nl-menu .nl-list .nl-item.active .nl-text {
@@ -184,8 +167,8 @@ button {
 }
 
 .nl-menu .nl-list {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .nl-item-order-list .nl-row .nl-col-3 .nl-row {
@@ -338,8 +321,10 @@ button {
 }
 
 .nl-ctn-part {
-    padding-top: 30px;
+    padding: 45px 50px 45px 58px;
+
     display: none;
+    width: calc(100% - 217px);
 }
 
 .nl-ctn-part.active {
@@ -379,4 +364,71 @@ button {
     display: block;
     width: 100%;
     text-align: center;
+}
+.nl-header-main {
+    background-color: #001a2a;
+    height: 42px;
+    align-items: center;
+}
+.nl-header-main .nl-left-part {
+    color: #fff;
+    padding-left: 26px;
+    width: 50%;
+}
+.nl-header-main .nl-right-part {
+    padding-right: 12px;
+    width: 50%;
+}
+.nl-header-main .nl-right-part .nl-row {
+    justify-content: flex-end;
+}
+.nl-header-main .nl-right-part .nl-row button {
+    height: 14px;
+    width: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    background-color: transparent;
+    margin-left: 26px;
+}
+.nl-header-main .nl-right-part .nl-row .nl-btn-x {
+    background-image: url(../img/icon1.svg);
+}
+.nl-header-main .nl-right-part .nl-row .nl-btn-zoom-up{
+    background-image: url(../img/icon2.svg);
+}
+.nl-header-main .nl-right-part .nl-row .nl-btn-zoom-down{
+    background-image: url(../img/icon3.svg);
+}
+.nl-item-order-list .nl-col-1 .nl-line-1 {
+    padding: 20px 0 10px;
+    border-bottom:  1px solid #e6e6e6;
+}
+.nl-item-order-list .nl-col-1 .nl-line-2 {
+    padding: 10px 0;
+}
+.nl-item-order-list .nl-col-1 .nl-line-4 {
+    align-items: flex-end;
+    padding-bottom: 32px;
+}
+.nl-item-order-list .nl-row .nl-col-2>.nl-row {
+    height: 100%;
+}
+.nl-order-num {
+    position: relative;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.nl-order-num::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 22px;
+    width: 0;
+    border-right: 1px solid #e2e2e2;
 }
