@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 a {
     text-decoration: none;
 }
@@ -228,6 +230,9 @@ button {
 .nl-mg-b-16 {
     margin-bottom: 16px
 }
+.nl-mg-b-10 {
+    margin-bottom: 10px
+} 
 
 .nl-pu {
     position: fixed;
@@ -244,7 +249,8 @@ button {
     width: 400px;
 }
 
-.nl-pu-ctn .nl-head {
+.nl-pu-ctn .nl-head,
+.nl-ctn-login .nl-head {
     position: relative;
     display: flex;
     align-items: center;
@@ -253,7 +259,8 @@ button {
     height: 50px;
 }
 
-.nl-pu-ctn .nl-head .nl-close {
+.nl-pu-ctn .nl-head .nl-close,
+.nl-ctn-login .nl-head .nl-close{
     position: absolute;
     right: 15px;
     top: 15px;
@@ -265,7 +272,8 @@ button {
     margin: 0 10px 0 15px;
 }
 
-.nl-pu-ctn .nl-head .nl-title {
+.nl-pu-ctn .nl-head .nl-title,
+.nl-ctn-login .nl-head .nl-title{
     font-size: 18px;
 }
 
@@ -315,4 +323,39 @@ button {
 
 .nl-ctn-part.active {
     display: block !important;
+}
+.nl-ctn-login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    width: 340px;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0 0 9px -3px rgba(0, 0, 0, .5);
+    border-radius: 3;
+}
+.nl-ctn-login .nl-text-lbl {
+    width: 90px;
+}
+.nl-ctn-login form {
+    padding: 30px;
+}
+.nl-btn-login {
+    height: 50px;
+    background-color: #24262d;
+    border: 0;
+    color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.nl-ctn-login .nl-ip {
+    height: 40px;
+}
+.nl-ctn-login .nl-head .nl-title {
+    display: block;
+    width: 100%;
+    text-align: center;
 }
