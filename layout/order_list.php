@@ -192,7 +192,7 @@ SELECT o.order_id, o.regtime,o.cancel_after_shop_accept,o.cancel_before_shop_acc
         <!-- content 3 -->
         <div id="ctn-3" class="nl-ctn-3  nl-ctn-part tab3"></div>
     </div>
-    <div class="nl-pu">
+    <div class="nl-pu nl-hidden">
         <div class="nl-pu-ctn">
             <div class="nl-head">
                 <img src="../public/img/icon4.svg" alt="" class="nl-back">
