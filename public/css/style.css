@@ -49,20 +49,33 @@ button {
 .nl-container {
     max-width: 760px;
     margin: 0 auto;
+    background-color: #f2f3f4;
+    min-height: 720px;
 }
 
 .nl-item-order-list {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    padding: 0 15px;
+    font-weight: 600;
 }
-
+.nl-item-order-list>.nl-row {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+}
 .nl-item-order-list .nl-row>div {
     padding: 0 20px;
 }
-
-.nl-item-order-list .nl-row .nl-col-2 {
-    width: calc(100% - 278px);
+.nl-item-order-list .nl-row .nl-col-1 {
+    width: 148px;
 }
-
+.nl-item-order-list .nl-row .nl-col-2 {
+    width: calc(100% - 288px);
+}
+.nl-item-order-list .nl-row .nl-col-3 {
+    width: 140px;
+}
 .nl-item-order-list .nl-text-time {
     display: block;
     font-size: 42px;
@@ -71,8 +84,8 @@ button {
 
 .nl-item-order-list .nl-text-type {
     display: block;
-    height: 40px;
-    line-height: 40px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
     color: #fff;
     border-radius: 20px;
@@ -81,7 +94,7 @@ button {
 
 .nl-item-order-list .nl-text-price {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .nl-item-order-list .nl-pay-status {
@@ -90,27 +103,32 @@ button {
     border-radius: 15px;
     display: inline-block;
     min-width: 70px;
-    padding: 2px 10px;
+    padding: 1px 10px;
     text-align: center;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .nl-item-order-list .nl-pay-status.type-1 {
-    border-color: blue;
-    color: blue;
+    border-color: #1391a1;
+    color: #1391a1;
 }
 
 .nl-item-order-list .nl-pay-status.type-2 {
     border-color: orange;
     color: orange;
 }
-
+.nl-item-order-list .nl-row .nl-col-1>.nl-row {
+     justify-content: center;
+     height: 100%;
+}
 .nl-item-order-list .nl-row .nl-col-2 div span {
     display: inline-block;
 }
 
 .nl-item-order-list .nl-text-1 {
     padding: 10px 0;
-    color: #5d5d5d;
+    color: #8a8a8a;
 }
 
 /* .nl-item-order-list .nl-text-2 {
@@ -118,7 +136,7 @@ button {
 } */
 
 .nl-item-order-list .nl-text-3 {
-    color: #004e8e;
+    color: #5d5d5d;
     ;
     margin-top: 5px;
     font-weight: 600;
@@ -133,7 +151,7 @@ button {
 .nl-btn-print {
     background-color: #f0f0f0;
     border: 1px solid #888;
-    height: 100%;
+    height: 100px;
     width: 100px;
     display: flex;
     align-items: center;
@@ -185,6 +203,7 @@ button {
     position: relative;
     display: flex;
     border: 1px solid #c4c4c4;
+    background-color: #fff;
 }
 
 .nl-ip-part.one-btn .nl-ip {

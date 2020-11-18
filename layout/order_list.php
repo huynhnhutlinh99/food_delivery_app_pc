@@ -27,6 +27,7 @@
                     <div>
                         <span class="nl-text-price">20,000을</span>
                         <span class="nl-pay-status type-1 ">전을</span>
+                        <span class="nl-pay-status type-2 ">전을</span>
                     </div>
                     <div>
                         <span class="nl-text-1">국민경제의 SET 1을</span>
@@ -40,7 +41,73 @@
                     </div>
                 </div>
                 <div class="nl-col-3">
-                    <button type="button" class="nl-btn-print">발전을</button>
+                    <div class="nl-row nl-a-center nl-j-center">
+                        <button type="button" class="nl-btn-print">발전을</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nl-item-order-list">
+            <div class="nl-row">
+                <div class="nl-col-1">
+                    <div class="nl-row nl-flex-col">
+                        <span class="nl-text-time">07:48</span>
+                        <span class="nl-text-type green">유형</span>
+                    </div>
+                </div>
+                <div class="nl-col-2">
+                    <div>
+                        <span class="nl-text-price">20,000을</span>
+                        <span class="nl-pay-status type-1 ">전을</span>
+                        <span class="nl-pay-status type-2 ">전을</span>
+                    </div>
+                    <div>
+                        <span class="nl-text-1">국민경제의 SET 1을</span>
+                    </div>
+                    <div>
+                        <span class="nl-text-2">국민경: 112</span>
+                    </div>
+                    <div class="nl-row">
+                        <span class="nl-text-3">응하 위하여</span>
+                        <span class="nl-text-4">응하기 위하여</span>
+                    </div>
+                </div>
+                <div class="nl-col-3">
+                    <div class="nl-row nl-a-center nl-j-center">
+                        <button type="button" class="nl-btn-print">발전을</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nl-item-order-list">
+            <div class="nl-row">
+                <div class="nl-col-1">
+                    <div class="nl-row nl-flex-col">
+                        <span class="nl-text-time">08:15</span>
+                        <span class="nl-text-type green">유형</span>
+                    </div>
+                </div>
+                <div class="nl-col-2">
+                    <div>
+                        <span class="nl-text-price">20,000을</span>
+                        <span class="nl-pay-status type-1 ">전을</span>
+                        <span class="nl-pay-status type-2 ">전을</span>
+                    </div>
+                    <div>
+                        <span class="nl-text-1">국민경제의 SET 1을</span>
+                    </div>
+                    <div>
+                        <span class="nl-text-2">국민경: 112</span>
+                    </div>
+                    <div class="nl-row">
+                        <span class="nl-text-3">응하 위하여</span>
+                        <span class="nl-text-4">응하기 위하여</span>
+                    </div>
+                </div>
+                <div class="nl-col-3">
+                    <div class="nl-row nl-a-center nl-j-center">
+                        <button type="button" class="nl-btn-print">발전을</button>
+                    </div>
                 </div>
             </div>
         </div>
