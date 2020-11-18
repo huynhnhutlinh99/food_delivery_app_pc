@@ -5,17 +5,17 @@
                 <span class="nl-title">LOGIN</span>
                 <img src="../public/img/icon_x_mark.svg" alt="" class="nl-close">
             </div>
-            <form action="#">
+            <form action="login_ok.php" method="POST">
                 <div class="nl-row nl-a-center nl-mg-b-16">
                     <label for="#" class="nl-text-lbl">Username</label>
-                    <input type="text" class="nl-ip">
+                    <input type="text" class="nl-ip" name="r_id">
                 </div>
                 <div class="nl-row nl-a-center">
                     <label for="#" class="nl-text-lbl">Password</label>
-                    <input type="text" class="nl-ip">
+                    <input type="text" class="nl-ip" name="r_pw">
                 </div>
 
-                <button class="nl-btn-login nl-max">Login</button>
+                <button type="submit" class="nl-btn-login nl-max">Login</button>
             </form>
         </div>
     </div>

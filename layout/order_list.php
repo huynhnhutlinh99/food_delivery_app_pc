@@ -1,4 +1,7 @@
 <?php include_once './includes/head.meta.php'?>
+<?php
+session_start();
+echo 'id: '.$_SESSION['r_id']; ?>
 <div class="nl-container">
     <div class="nl-menu">
         <ul id="menu" class="nl-list">
