@@ -11,7 +11,7 @@
                     <input type="text" class="nl-ip">
                 </div>
                 <div class="nl-row nl-a-center">
-                    <label for="#" class="nl-text-lbl">Passwork</label>
+                    <label for="#" class="nl-text-lbl">Password</label>
                     <input type="text" class="nl-ip">
                 </div>
 
