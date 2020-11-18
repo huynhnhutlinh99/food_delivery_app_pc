@@ -192,59 +192,55 @@ SELECT o.order_id, o.regtime,o.cancel_after_shop_accept,o.cancel_before_shop_acc
         <!-- content 3 -->
         <div id="ctn-3" class="nl-ctn-3  nl-ctn-part tab3"></div>
     </div>
-    <div class="nl-pu nl-hidden">
+    <div class="nl-pu">
         <div class="nl-pu-ctn">
             <div class="nl-head">
-                <img src="../public/img/ico_back_pu.svg" alt="" class="nl-back">
+                <img src="../public/img/icon4.svg" alt="" class="nl-back">
                 <span class="nl-title">발전을</span>
-                <img src="../public/img/icon_x_mark.svg" alt="" class="nl-close">
+                <img src="../public/img/icon1.svg" alt="" class="nl-close">
             </div>
             <div class="nl-ctn">
-                <span class="nl-text-ms">취소 이유 선택.</span>
-                <table class="nl-list-reason">
-                    <tr>
-                        <td>
+                <p class="nl-text-ms">취소 이유 선택.</p>
+                <div class="nl-list-reason">
+                    <div class="nl-row">
+                        <div class="nl-col">
                             <label class="nl-reason-item">
                                 <input type="radio" name="reason" id="" class="nl-hidden">
                                 <div class="nl-box">취소 이유</div>
                             </label>
-                        </td>
-                        <td>
+                        </div>
+                        <div class="nl-col">
                             <label class="nl-reason-item">
                                 <input type="radio" name="reason" id="" class="nl-hidden">
                                 <div class="nl-box">취소 이유</div>
                             </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+                        </div>
+                        <div class="nl-col">
                             <label class="nl-reason-item">
                                 <input type="radio" name="reason" id="" class="nl-hidden">
                                 <div class="nl-box">취소 이유</div>
                             </label>
-                        </td>
-                        <td>
+                        </div>
+                        <div class="nl-col">
                             <label class="nl-reason-item">
                                 <input type="radio" name="reason" id="" class="nl-hidden">
                                 <div class="nl-box">취소 이유</div>
                             </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+                        </div>
+                        <div class="nl-col">
                             <label class="nl-reason-item">
                                 <input type="radio" name="reason" id="" class="nl-hidden">
                                 <div class="nl-box">취소 이유</div>
                             </label>
-                        </td>
-                        <td>
+                        </div>
+                        <div class="nl-col">
                             <label class="nl-reason-item">
                                 <input type="radio" name="reason" id="" class="nl-hidden">
                                 <div class="nl-box">취소 이유</div>
                             </label>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>

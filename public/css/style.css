@@ -257,11 +257,14 @@ button {
     left: 0;
     background-color: rgba(0, 0, 0, .5);
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nl-pu-ctn {
     background-color: #f0f0f0;
-    width: 400px;
+    width: 814px;
 }
 
 .nl-pu-ctn .nl-head,
@@ -284,7 +287,7 @@ button {
 
 .nl-pu-ctn .nl-head .nl-back {
     height: 16px;
-    margin: 0 10px 0 15px;
+    margin: 0 22px 0 15px;
 }
 
 .nl-pu-ctn .nl-head .nl-title,
@@ -293,10 +296,13 @@ button {
 }
 
 .nl-pu-ctn .nl-ctn {
-    padding: 30px 20px;
+    padding: 30px 40px 40px;
     text-align: center;
 }
-
+.nl-pu-ctn .nl-ctn .nl-text-ms {
+    text-align: left;
+    padding-left: 5px;
+}
 .nl-hidden {
     display: none !important;
 }
@@ -304,29 +310,26 @@ button {
 .nl-list-reason {
     margin-top: 30px;
     width: 100%;
-    border-collapse: collapse;
-    background-color: #fff;
+}
+.nl-list-reason .nl-row {
+    flex-wrap: wrap;
+}
+.nl-list-reason .nl-row .nl-col{
+    width: 33.333%;
+    padding: 6px;
 }
 
-.nl-list-reason, tr, td {
-    border: 1px solid #888;
-}
-
-.nl-list-reason tr td {
-    width: 50%;
-    height: 50px;
-    text-align: center;
-}
-
-.nl-list-reason tr td .nl-box {
+.nl-list-reason .nl-box {
     width: 100%;
-    height: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
-.nl-list-reason tr td input:checked~.nl-box {
+.nl-list-reason input:checked~.nl-box {
     background-color: #888;
     color: #fff;
 }
